@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #combos {
-  height: 400px;
+  height: 450px;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -9,17 +9,10 @@
   align-items: center;
   padding: 1em;
   background-color: #979b98; }
-  #combos #combo1 {
+  #combos #combos_iguales, #combos #combo1, #combos #combo2, #combos #combo3 {
     height: auto;
     width: 50%;
-    text-align: center; }
-  #combos #combo2 {
-    height: auto;
-    width: 50%;
-    text-align: center; }
-  #combos #combo3 {
-    height: auto;
-    width: 50%;
+    padding-top: 3%;
     text-align: center; }
   #combos #pDescripcion {
     font-style: italic;
@@ -58,6 +51,7 @@
 
 .body {
   background-color: #A78B8B;
+  /*--------------Formato de imágenes-------------*/
   /*--------------Imágenes carrusel-------------*/ }
   .body .main {
     height: auto;
@@ -84,63 +78,55 @@
     .body .main .logo:hover {
       height: 120px;
       width: 200px; }
-  .body .imgCarru {
+  .body .img {
     max-width: 100%;
-    height: 640px; }
-
-.footer {
-  height: auto;
-  background-image: linear-gradient(#9b8382, #d3d0d0);
-  /*--------------Redes-------------*/ }
-  .footer .redes {
-    font-family: 'Tenali Ramakrishna', sans-serif;
-    font-size: 2vw;
-    text-align-last: right; }
-
-.p {
-  font-style: italic;
-  font-weight: 300;
-  color: #212229;
-  font-size: 3vw;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 5%px; }
-
-.colorUsuario {
-  color: #48505a;
-  font-size: 2vw; }
-
-.fotoQuienes {
-  height: 350px;
-  width: auto;
-  max-height: 100%;
-  background-image: url("como.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
-
-.card {
-  width: 350px;
-  height: 480px;
-  background-color: #ceb8c3;
-  text-align: center; }
-
-/*--------------Formato de imágenes-------------*/
-img {
-  max-width: 100%;
-  width: 240px;
-  height: 240px; }
-
-#pDescripcion:hover {
-  transform: scale(1.3, 1.3); }
-
-input:focus {
-  width: 100px;
-  font-size: 24px; }
-
-select:focus {
-  width: 100px;
-  font-size: 24px; }
+    height: 250px;
+    width: 250px; }
+  .body .carrusel {
+    max-width: 100%;
+    height: 640px;
+    width: 900px;
+    margin-left: 10%; }
+  .body .footer {
+    height: auto;
+    background-image: linear-gradient(#9b8382, #d3d0d0);
+    /*--------------Redes-------------*/ }
+    .body .footer .redes {
+      font-family: 'Tenali Ramakrishna', sans-serif;
+      font-size: 2vw;
+      text-align-last: right; }
+  .body .p {
+    font-style: italic;
+    font-weight: 300;
+    color: #212229;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5%px; }
+  .body .colorUsuario {
+    color: #48505a;
+    font-size: 2vw; }
+  .body .fotoQuienes {
+    height: 350px;
+    width: auto;
+    max-height: 100%;
+    background-image: url("como.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  .body .card {
+    width: 350px;
+    height: 480px;
+    background-color: #ceb8c3;
+    text-align: center; }
+  .body #pDescripcion:hover {
+    transform: scale(1.3, 1.3); }
+  .body input:focus {
+    width: 100px;
+    font-size: 24px; }
+  .body select:focus {
+    width: 100px;
+    font-size: 24px; }
 
 @keyframes titulos {
   0% {
@@ -163,31 +149,30 @@ select:focus {
     color: #663c5c;
     background-image: linear-gradient(to right, #3b3737, #986D8E);
     width: 100%; } }
-
-@media only screen and (max-width: 600px) {
-  .header {
-    height: 150px; }
-    .header #nav {
-      background-color: #86637e; }
-      .header #nav .ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
-        list-style-type: none; }
-  .p {
-    font-size: 1.5vw; }
-  .main {
-    height: 900px; }
-  #combos {
-    height: 800px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em;
-    background-color: #979b98; }
-  .footer {
-    height: 100px; } }
+  @media only screen and (max-width: 600px) {
+    .body .header {
+      height: 150px; }
+      .body .header #nav {
+        background-color: #86637e; }
+        .body .header #nav .ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          align-items: flex-start;
+          list-style-type: none; }
+    .body .p {
+      font-size: 1.5vw; }
+    .body .main {
+      height: 900px; }
+    .body #combos {
+      height: 800px;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1em;
+      background-color: #979b98; }
+    .body .footer {
+      height: 100px; } }
