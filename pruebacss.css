@@ -1,0 +1,178 @@
+@charset "UTF-8";
+#combos {
+  height: 450px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  background-color: #979b98; }
+  #combos #combos_iguales, #combos #combo1, #combos #combo2, #combos #combo3 {
+    height: auto;
+    width: 50%;
+    padding-top: 3%;
+    text-align: center; }
+  #combos #pDescripcion {
+    font-style: italic;
+    font-weight: 300;
+    color: #212229;
+    font-size: 1.3vw;
+    text-align: justify;
+    margin-top: 3px;
+    margin-left: 4px;
+    padding-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    contain: content; }
+
+.header {
+  height: 60px;
+  background-image: linear-gradient(to bottom, #9b8382, #d3d0d0);
+  opacity: 0.6; }
+  .header #nav {
+    background-color: #86637e; }
+    .header #nav .ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none; }
+      .header #nav .ul .a {
+        text-decoration: none;
+        font-family: 'Marcador permanente',cursive;
+        color: #212229;
+        font-size: 1.8vw;
+        text-align: left; }
+      .header #nav .ul .a:hover {
+        color: #212229;
+        text-decoration-line: underline; }
+
+.body {
+  background-color: #A78B8B;
+  /*--------------Formato de imágenes-------------*/
+  /*--------------Imágenes carrusel-------------*/ }
+  .body .main {
+    height: auto;
+    width: auto; }
+    .body .main #h1 {
+      font-family: 'Marcador permanente', cursiva;
+      font-size: 6vw;
+      color: #dbbad2;
+      text-align: center;
+      margin-bottom: 7%;
+      animation-name: titulos;
+      animation-duration: 3s;
+      background-image: linear-gradient(to right, #0a0a0a, #986D8E); }
+    .body .main .logo {
+      margin-top: 1px;
+      height: 7vw;
+      width: 7vw;
+      position: absolute;
+      background-image: url("../irlish.jpeg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      transition: 3s; }
+    .body .main .logo:hover {
+      height: 120px;
+      width: 200px; }
+  .body .img {
+    max-width: 100%;
+    height: 250px;
+    width: 250px; }
+  .body .carrusel {
+    max-width: 100%;
+    height: 640px;
+    width: 1000px;
+    margin-left: 10%; }
+  .body .footer {
+    height: auto;
+    background-image: linear-gradient(#9b8382, #d3d0d0);
+    /*--------------Redes-------------*/ }
+    .body .footer .redes {
+      font-family: 'Tenali Ramakrishna', sans-serif;
+      font-size: 2vw;
+      text-align-last: right; }
+  .body .p {
+    font-style: italic;
+    font-weight: 300;
+    color: #212229;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5%px; }
+  .body .colorUsuario {
+    color: #48505a;
+    font-size: 2vw; }
+  .body .fotoQuienes {
+    height: 350px;
+    width: auto;
+    max-height: 100%;
+    background-image: url("como.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  .body .card {
+    width: 350px;
+    height: 480px;
+    background-color: #ceb8c3;
+    text-align: center; }
+  .body #pDescripcion:hover {
+    transform: scale(1.3, 1.3); }
+  .body input:focus {
+    width: 100px;
+    font-size: 24px; }
+  .body select:focus {
+    width: 100px;
+    font-size: 24px; }
+
+@keyframes titulos {
+  0% {
+    background-image: linear-gradient(to right, #070707, #1f1d1e);
+    color: #b38383;
+    width: 30%; }
+  35% {
+    color: #7c6060;
+    background-image: linear-gradient(to right, #1b1a1a, #4b494a);
+    width: 50%; }
+  50% {
+    color: #796969;
+    background-image: linear-gradient(to right, #3b3737, #986D8E);
+    white: 65%; }
+  75% {
+    color: #705656;
+    background-image: linear-gradient(to right, #3b3737, #986D8E);
+    width: 80%; }
+  100% {
+    color: #663c5c;
+    background-image: linear-gradient(to right, #3b3737, #986D8E);
+    width: 100%; } }
+  @media only screen and (max-width: 600px) {
+    .body .header {
+      height: 150px; }
+      .body .header #nav {
+        background-color: #86637e; }
+        .body .header #nav .ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          align-items: flex-start;
+          list-style-type: none; }
+    .body .p {
+      font-size: 1.5vw; }
+    .body .main {
+      height: 900px; }
+    .body #combos {
+      height: 800px;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1em;
+      background-color: #979b98; }
+    .body .footer {
+      height: 100px; } }
